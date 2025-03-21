@@ -6,7 +6,6 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.introduction}>
-        <h1>Hi, I'm Theo</h1>
         <div className={styles.profileImageContainer}>
           <img 
             src="/profilepic.jpg" 
@@ -14,6 +13,7 @@ export const Hero = () => {
             className={styles.profileImage} 
           />
         </div>
+        <h1>Theo Fink</h1>
       </div>
 
       <div className={styles.contact}>
@@ -35,6 +35,22 @@ export const Hero = () => {
           </li>
         </ul>
       </div>
+
+      <div className={styles.blurb}>
+        <p>Hi! I'm Theo, a third year computer science student at the University of Otago. Outside of uni, I enjoy working on some personal coding projects, as well as my other hobbies. Navigate through this website to learn more about me, my experience in software development and my projects!</p>
+      </div>
+
+      {/* <div className={styles.previewPane}>
+        <a href="#about" className={styles.previewBoxes}>
+            <h2>About Me</h2>
+        </a>
+        <a href="#projects" className={styles.previewBoxes}>
+            <h2>Projects</h2>
+        </a>
+        <a href="#experience" className={styles.previewBoxes}>
+            <h2>Experience</h2>
+        </a>
+      </div> */}
     </section>
   );
 };

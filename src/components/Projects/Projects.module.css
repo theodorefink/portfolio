@@ -1,0 +1,67 @@
+.projectsSection {
+    outline: 2px solid black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 5vh; /* 5% of the viewport height, adjust as needed */
+    margin-bottom: 5vh; 
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.projectBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectBox2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectTitle {
+    display: flex;
+    margin: 20px;
+    font-size: 26px;
+}
+
+.projectImage {
+    max-width: 200px;
+    max-height: 200px;
+    outline: 2px solid black;
+    margin: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectImage:hover {
+    transform: scale(1.05); 
+}
+
+.projectBox:hover {
+    transform: scale(1.03);
+}
+
+h2:hover {
+    transform: scale(1.05);
+}
+
+.projectDesc {
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+}

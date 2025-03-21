@@ -1,3 +1,109 @@
+.hero {
+    outline: 2px solid black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.introduction {
+  display: flex; /* Aligns image and text horizontally */
+  align-items: center; /* Centers text and image vertically */
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+  margin-top: 5vh; /* 5% of the viewport height, adjust as needed */
+  margin-bottom: 2vh; /* 10% of the viewport height, adjust as needed */
+  max-width: fit-content;
+  margin-left: auto; /* Centers the div horizontally */
+  margin-right: auto; /* Centers the div horizontally */
+  /* outline: 2px solid black; */
+}
+
+.introduction:hover {
+  transform: scale(1.05); 
+} 
+
+.profileImageContainer {
+  margin-right: 20px; 
+}
+
+.profileImage {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  transition: transform 0.3s ease; 
+  outline: 2px solid black;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.contactList {
+  display: flex;
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  gap: 20px; /* Adds spacing between icons */
+}
+
 .icon {
-    color: white;
+  font-size: 30px; /* Adjust the icon size */
+  color: black; /* Set the color of the icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+  color: #007bff; /* Change color on hover (adjust as needed) */
+}
+
+.blurb {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blurb:hover{
+    transform: scale(1.05);
+}
+
+.previewPane {
+    display: flex;
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 20px; /* Adds spacing between boxes */
+    margin-top: 40px; /* Adds space between this section and the content above */
+}
+  
+.previewBoxes {
+    width: 250px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border: 2px solid black; /* White outline */
+    display: flex;
+    justify-content: center; /* Centers h2 text horizontally */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    padding: 20px;
+}
+  
+.previewBoxes:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+  
+h2 {
+    color: black; /* Ensures text is visible */
+    font-size: 20px;
 }

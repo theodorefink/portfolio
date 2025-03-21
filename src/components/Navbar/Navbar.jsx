@@ -1,18 +1,23 @@
 import React from "react";
+import styles from './Navbar.module.css';
+import { FaHome } from 'react-icons/fa';
+
 
 export const Navbar = () => {
     return <nav>
-        <a href="/">Home</a>
+        <a href="/" target="_blank" rel="noopener noreferrer">
+            <FaHome className={styles.homeIcon} />
+        </a>
         <div>
-            <ul>
+            <ul className={styles.navList}>
                 <li>
                     <a href = "#about">About</a>
                 </li>
                 <li>
-                    <a href = "#experience">Experience</a>
+                    <a href = "#projects">Projects</a>
                 </li>
                 <li>
-                    <a href = "#projects">Projects</a>
+                    <a href = "#experience">Experience</a>
                 </li>
                 <li>
                     <a href = "#contact">Contact</a>
