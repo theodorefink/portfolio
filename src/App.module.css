@@ -21,3 +21,7 @@
   outline-offset: -10px; /* Adjust outline positioning */
   min-height: 100vh; /* Ensure the container stretches to full height */
 }
+
+html {
+    scroll-behavior: smooth;
+}
