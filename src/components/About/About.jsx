@@ -15,7 +15,7 @@ export const About = () => {
                             className={styles.aboutImage} 
                         />
                     </a>
-                    <p className={styles.aboutDesc}>I am in my third year of my Bachelor of Science at the University of Otago, majoring in Computer Science and minoring in Mathematics. I have achieved highly in disciplines such as Web Development, Software Development, Data Structures and Algorithms, Databases, and Operating Systems Programming, and I am yet to complete papers in Artificial Intelligence. I currently hold a GPA of 7.9 out of 9, which reflects my ability to work hard and hold myself to high standards. I am also proficient in Linear Algebra and Differential Equations - I thoroughly enjoy the problem solving side of Computer Science and Mathematics.</p>
+                    <p className={styles.aboutDesc}>I am in my third year of my Bachelor of Science at the University of Otago, majoring in Computer Science and minoring in Mathematics. I have achieved highly in disciplines such as Web Development, Software Development, Data Structures and Algorithms, Databases, and Operating Systems Programming, and I am yet to complete papers in Artificial Intelligence. I currently hold a GPA of 7.6 out of 9, which reflects my ability to work hard and hold myself to high standards. I am also proficient in Linear Algebra and Differential Equations - I thoroughly enjoy the problem solving side of Computer Science and Mathematics.</p>
                 </div>
             </div>
             <div className={styles.aboutBox}>
