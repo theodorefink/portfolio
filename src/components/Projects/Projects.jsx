@@ -17,7 +17,6 @@ export const Projects = () => {
                     </a>
                     <p className={styles.projectDesc}>This is my Spelling Bee solver web app that I made as a personal project. I love doing the New York Times spelling bee, but sometimes I get a bit stumped so I made this solver app!</p>
                 </div>
-                
             </div>
             <div className={styles.projectBox}>
                 <h3 className={styles.projectTitle}>New Zealand Birds website</h3>

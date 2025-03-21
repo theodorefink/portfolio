@@ -16,7 +16,7 @@ h2 {
     margin-top: 5vh; /* 5% of the viewport height, adjust as needed */
     margin-bottom: 5vh; 
     transition: transform 0.3s ease, color 0.3s ease;
-
+    max-width: fit-content;
 }
 
 .projectBox {
