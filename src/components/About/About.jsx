@@ -26,7 +26,7 @@ export const About = () => {
                         alt="music studio photo" 
                         className={styles.aboutImage2} 
                     />
-                    <p className={styles.aboutDesc}>Outside of coding, I enjoy making electronic music using Ableton, a digital audio workstation on my computer. I have been teaching myself over the past two years and have uploaded some of my finished tracks on my soundcloud <a href="https://soundcloud.com/theodore-nz" target="_blank" rel="noopener noreferrer">here.</a> The world of software instruments and plugins is already super vast, and it fascinates me how many sounds and effects can be achieved through software, and I would love to one day be able to code my own! </p>
+                    <p className={styles.aboutDesc}>Outside of coding, I enjoy making electronic music using Ableton, a digital audio workstation on my computer. I have been teaching myself over the past two years and have uploaded some of my finished tracks on my soundcloud <a href="https://soundcloud.com/theodore-nz" target="_blank" rel="noopener noreferrer">here.</a> The world of software instruments and plugins is already super vast, it fascinates me how many sounds and effects can be achieved through software, and I would love to one day be able to code my own! </p>
                 </div>
                 {/* <div className={styles.aboutBox2}>
                     <img 
