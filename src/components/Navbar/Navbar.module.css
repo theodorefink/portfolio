@@ -17,6 +17,10 @@ nav {
     transition: transform 0.3s ease; /* Smooth transition for hide/show */
   }
   
+  nav:hover{
+    transform: scale(1.05);
+  }
+
   .homeIcon {
     color: black; 
     font-size: 30px;
