@@ -37,7 +37,7 @@ export const Hero = () => {
       </div>
 
       <div className={styles.blurb}>
-        <p>Hi! I'm Theo, a third year computer science student at the University of Otago. Outside of uni, I enjoy working on some personal coding projects, as well as my other hobbies. Navigate through this website to learn more about me, my experience in software development and my projects!</p>
+        <p>Kia Ora! I'm Theo, a third year computer science student at the University of Otago. Outside of uni, I enjoy working on some personal coding projects, as well as my other hobbies. Navigate through this website to learn more about me, my experience in software development and my projects!</p>
       </div>
 
       {/* <div className={styles.previewPane}>
