@@ -65,6 +65,7 @@ nav {
   
     .homeIcon {
       font-size: 20px;
+      gap: 10px;
     }
   
     .navList {
