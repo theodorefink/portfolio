@@ -1,71 +1,67 @@
 .projectsSection {
-    outline: 2px solid black;
-    margin: 3vh 10vw 0 10vw;
-    padding: 10px 10vw;
-  }
+  outline: 2px solid black;
+  margin: 3vh 10vw 0 10vw;
+  padding: 10px 10vw;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 5vh auto;
+  max-width: fit-content;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid black;
+  margin: 20px 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectBox:hover {
+  transform: scale(1.03);
+}
+
+.projectBox2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectTitle {
+  display: flex;
+  margin: 20px;
+  font-size: 26px;
+}
+
+.projectImage {
+  max-width: 200px;
+  max-height: 200px;
+  outline: 2px solid black;
+  margin: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+.projectDesc {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+}
+
+/* === MOBILE RESPONSIVE ADJUSTMENTS === */
   
-  h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    margin: 5vh auto;
-    max-width: fit-content;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  h2:hover {
-    transform: scale(1.05);
-  }
-  
-  .projectBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline: 2px solid black;
-    margin: 20px 0;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .projectBox:hover {
-    transform: scale(1.03);
-  }
-  
-  .projectBox2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .projectTitle {
-    display: flex;
-    margin: 20px;
-    font-size: 26px;
-    text-align: center;
-  }
-  
-  .projectImage {
-    max-width: 200px;
-    max-height: 200px;
-    outline: 2px solid black;
-    margin: 20px;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .projectImage:hover {
-    transform: scale(1.05);
-  }
-  
-  .projectDesc {
-    display: flex;
-    margin: 20px;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  /* === MOBILE RESPONSIVE ADJUSTMENTS === */
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .projectsSection {
       margin: 3vh 5vw 0 5vw;
       padding: 10px 5vw;
