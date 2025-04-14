@@ -58,60 +58,21 @@ nav {
     transform: translateY(-100%); /* Move the navbar out of view */
   }
   
-  @media (max-width: 768px){
-
+  @media (max-width: 768px) {
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 10px;
-      margin-left: 10vw;
-      margin-right: 10vw;
-      position: fixed; /* Keep it fixed at the top */
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000; /* Make sure it's above other content */
-      background-color: white;
-      outline: 2px solid black;
-      transition: transform 0.3s ease; /* Smooth transition for hide/show */
+      padding: 10px 5vw;
     }
   
     .homeIcon {
-      color: black; 
       font-size: 20px;
     }
-    
-    nav div {
-      display: flex;
-      align-items: center;
-    }
-    
+  
     .navList {
-      display: flex;
-      gap: 10px; 
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+      gap: 10px;
     }
-    
-    .navList li {
-      color: black;
-    }
-    
+  
     .navList li a {
-      color: black; 
-      text-decoration: none;
-      font-size: 15px;
+      font-size: 16px;
     }
-    
-    .navList li a:hover {
-      text-decoration: underline; /* Optional: Underline links when hovered */
-    }
-    
-    /* Hidden navbar when scrolling down */
-    nav.hidden {
-      transform: translateY(-100%); /* Move the navbar out of view */
-    }
-
   }
+  
