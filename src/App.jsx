@@ -24,8 +24,8 @@ import { Contact } from './components/Contact/Contact';  // import your contact 
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Router>
+    <Router>
+      <div className={styles.App}>
         <Navbar />
         <Routes>
           <Route path="/" element={
@@ -41,10 +41,11 @@ function App() {
           } />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   )
 }
+
 
 
 export default App
