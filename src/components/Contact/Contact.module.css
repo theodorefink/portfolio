@@ -1,0 +1,49 @@
+.contactSection {
+    outline: 2px solid black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 5vh; /* 5% of the viewport height, adjust as needed */
+    margin-bottom: 5vh; 
+    transition: transform 0.3s ease, color 0.3s ease;
+    max-width: fit-content;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: 2px solid black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contactList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 30px; /* Adjust the icon size */
+    color: black; /* Set the color of the icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
+}
+
+.icon {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.contactLise:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
