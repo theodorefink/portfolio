@@ -16,10 +16,6 @@ nav {
     outline: 2px solid black;
     transition: transform 0.3s ease; /* Smooth transition for hide/show */
   }
-  
-  nav:hover{
-    transform: scale(1.05);
-  }
 
   .homeIcon {
     color: black; 
@@ -61,6 +57,8 @@ nav {
   @media (max-width: 768px) {
     nav {
       padding: 10px 5vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
     }
   
     .homeIcon {

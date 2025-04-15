@@ -2,7 +2,7 @@
     outline: 2px solid black;
     margin-left: 10vw;
     margin-right: 10vw;
-    margin-top: 3vh;
+    margin-top: 15vh;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10vw;
@@ -11,7 +11,7 @@
 
 h2 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 40px;
     margin-top: 5vh; /* 5% of the viewport height, adjust as needed */
     margin-bottom: 5vh; 
@@ -24,9 +24,37 @@ h2 {
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
+    /* outline: 2px solid black; */
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
+    align-items: center;
+}
+
+.contactBox2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20vw;
+    min-width: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     outline: 2px solid black;
     transition: transform 0.3s ease, color 0.3s ease;
-}
+    color: black;
+    padding: 15px;
+    /* justify-content: center; */
+  }
+  
+
+  .contactBox2 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: large;
+    gap: 10px; /* space between icon and text */
+  }
+  
 
 .contactList {
     list-style: none;
@@ -34,16 +62,47 @@ h2 {
     flex-direction: row;
     justify-content: left;
     font-size: 30px; /* Adjust the icon size */
-    color: black; /* Set the color of the icons */
+}
+
+.contactList li {
     transition: transform 0.3s ease, color 0.3s ease; /* Add smooth hover effect */
 }
 
-.icon {
-    margin-top: 0px;
-    margin-bottom: 30px;
+.contactList li:hover {
+    transform: scale(1.05); /* Slightly enlarge icons on hover */
 }
 
-.contactList:hover {
-    transform: scale(1.2); /* Slightly enlarge icons on hover */
+.contactBox2:hover {
+    transform: scale(1.05); /* Slightly enlarge icons on hover */
 }
 
+.contactBox2 a:hover {
+    text-decoration: underline; /* Slightly enlarge icons on hover */
+}
+
+/* == SMALL SCREEN HANDLING ==*/
+
+@media (max-width: 768px) {
+  .contactSection {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 8vh;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .contactBox2 {
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .contactBox2 a span {
+    display: none;
+  }
+}

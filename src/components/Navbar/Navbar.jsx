@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import styles from './Navbar.module.css';
 import { FaHome } from 'react-icons/fa';
@@ -25,9 +26,9 @@ export const Navbar = () => {
 
   return (
     <nav className={`${styles.navbar} ${!showNavbar && styles.hidden}`}>
-      <a href="/">
+      <Link to="/">
         <FaHome className={styles.homeIcon} />
-      </a>
+      </Link>
       <div>
         <ul className={styles.navList}>
           <li><a href="#about">About</a></li>
