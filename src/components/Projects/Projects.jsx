@@ -32,6 +32,19 @@ export const Projects = () => {
                 </div>
                 
             </div>
+            <div className={styles.projectBox}>
+                <h3 className={styles.projectTitle}>ANDIE</h3>
+                <div className={styles.projectBox2}>
+                    <a href="https://github.com/theodorefink/ANDIE" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            src="/andie.png" 
+                            alt="Photo of ANDIE" 
+                            className={styles.projectImage} 
+                        />
+                    </a>
+                    <p className={styles.projectDesc}>This is ANDIE - A Non-Destructive Image Editor. This was a group project, where we collectively implemented over 40 features.</p>
+                </div>
+            </div>
         </section>
     )
 }

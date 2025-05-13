@@ -11,9 +11,8 @@ export const About = () => {
     // Fetch tracks when the component mounts
     useEffect(() => {
         const fetchTracks = async () => {
-            // const isLocal = window.location.hostname === 'localhost';
-            // const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
-            const baseUrl = '/api';
+            const isLocal = window.location.hostname === 'localhost';
+            const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
 
             const response = await fetch(`${baseUrl}/users/${user_id}/tracks?client_id=${client_id}&limit=5`);
             const data = await response.json();
@@ -27,9 +26,8 @@ export const About = () => {
     // Function to fetch audio URL from transcoding URL
     const fetchAudioUrl = async (transcodingUrl) => {
 
-        // const isLocal = window.location.hostname === 'localhost';
-        // const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
-        const baseUrl = '/api';
+        const isLocal = window.location.hostname === 'localhost';
+        const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
         const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', baseUrl);
         // const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', '/api');
         const audioResponse = await fetch(`${newUrl}?client_id=${client_id}`);
