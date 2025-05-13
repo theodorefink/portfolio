@@ -22,7 +22,11 @@ export const About = () => {
 
     // Function to fetch audio URL from transcoding URL
     const fetchAudioUrl = async (transcodingUrl) => {
-        const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', '/api');
+
+        const isLocal = window.location.hostname === 'localhost';
+        const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
+        const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', baseUrl);
+        // const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', '/api');
         const audioResponse = await fetch(`${newUrl}?client_id=${client_id}`);
         const audioData = await audioResponse.json();
         console.log(audioData.url); // Log the audio URL
