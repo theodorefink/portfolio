@@ -11,7 +11,10 @@ export const About = () => {
     // Fetch tracks when the component mounts
     useEffect(() => {
         const fetchTracks = async () => {
-            const response = await fetch(`/api/users/${user_id}/tracks?client_id=${client_id}&limit=5`);
+            const isLocal = window.location.hostname === 'localhost';
+            const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
+
+            const response = await fetch(`${baseUrl}/users/${user_id}/tracks?client_id=${client_id}&limit=5`);
             const data = await response.json();
             console.log(data); // Log the response
             setTracks(data.collection); // Assuming 'collection' contains the track list
