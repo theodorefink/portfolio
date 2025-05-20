@@ -144,7 +144,9 @@ h4 {
     }
 
     .trackImage {
-      display: none;
+      /* display: none; */
+      height: 50px;
+      width: 50px;
     }
   }
   
