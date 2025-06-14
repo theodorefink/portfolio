@@ -42,7 +42,7 @@ export const Projects = () => {
                             className={styles.projectImage} 
                         />
                     </a>
-                    <p className={styles.projectDesc}>This is ANDIE - A Non-Destructive Image Editor. This was a group project, where we collectively implemented over 40 features.</p>
+                    <p className={styles.projectDesc}>This is ANDIE - A Non-Destructive Image Editor, built using Java and its Swing and AWT libraries. This was a group project, where we collectively implemented over 40 features.</p>
                 </div>
             </div>
         </section>

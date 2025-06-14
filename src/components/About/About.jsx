@@ -13,7 +13,13 @@ export const About = () => {
         const fetchTracks = async () => {
             // const isLocal = window.location.hostname === 'localhost';
             // const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
+
             const baseUrl = '/api/soundcloud';
+
+            // const baseUrl = window.location.hostname === 'localhost'
+            //   ? 'http://localhost:3001/api/soundcloud'
+            //   : '/api/soundcloud';
+
 
             const response = await fetch(`${baseUrl}?path=users/${user_id}/tracks&limit=5`);
             //const response = await fetch(`${baseUrl}/users/${user_id}/tracks?client_id=${client_id}&limit=5`);
@@ -28,6 +34,9 @@ export const About = () => {
     // Function to fetch audio URL from transcoding URL
     const fetchAudioUrl = async (transcodingUrl) => {
         const baseUrl = '/api/soundcloud';
+        // const baseUrl = window.location.hostname === 'localhost'
+        //   ? 'http://localhost:3001/api/soundcloud'
+        //   : '/api/soundcloud';
         //const isLocal = window.location.hostname === 'localhost';
         //const baseUrl = isLocal ? '/api' : 'https://api-v2.soundcloud.com';
         //const newUrl = transcodingUrl.replace('https://api-v2.soundcloud.com', baseUrl);

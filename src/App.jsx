@@ -4,23 +4,36 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
-import { Contact } from './components/Contact/Contact';  // import your contact page
+import { Contact } from './components/Contact/Contact';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-// function App() {
+function ScrollToHashOnHome() {
+  const location = useLocation();
 
-//   return (
-//     <div className={styles.App}>
-//       <Navbar/>
-//       <Hero/>
-//       <div id="projects">
-//         <Projects />
-//       </div>
-//       <div id="about">
-//         <About />
-//       </div>
-//     </div>
-//   )
-// }
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
+  }, [location]);
+
+  return (
+    <>
+      <Hero />
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+    </>
+  );
+}
 
 function App() {
   return (
@@ -28,24 +41,12 @@ function App() {
       <div className={styles.App}>
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <div id="projects">
-                <Projects />
-              </div>
-              <div id="about">
-                <About />
-              </div>
-            </>
-          } />
+          <Route path="/" element={<ScrollToHashOnHome />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-
-
-export default App
+export default App;
