@@ -13,7 +13,7 @@ export const Hero = () => {
             className={styles.profileImage} 
           />
         </div>
-        <h1>Theo Fink</h1>
+        <h1>Theo Fink</h1> 
       </div>
 
       <div className={styles.contact}>
