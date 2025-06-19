@@ -1,4 +1,5 @@
 {
+  "homepage": "https://theodorefink.github.io/portfolio",
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,12 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview", "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/outfit": "^5.2.5",
     "@fontsource/roboto": "^5.2.5",
     "express": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "node-fetch": "^3.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
