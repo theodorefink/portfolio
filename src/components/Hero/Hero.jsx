@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Hero.module.css';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import profilePic from '../../assets/profilepic.jpg'; 
 
 export const Hero = () => {
   return (
@@ -8,7 +9,7 @@ export const Hero = () => {
       <div className={styles.introduction}>
         <div className={styles.profileImageContainer}>
           <img 
-            src="/profilepic.jpg" 
+            src={profilePic} 
             alt="Photo of me" 
             className={styles.profileImage} 
           />

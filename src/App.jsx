@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import styles from './App.module.css';
 import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
@@ -6,7 +6,6 @@ import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 function ScrollToHashOnHome() {
   const location = useLocation();
@@ -24,7 +23,9 @@ function ScrollToHashOnHome() {
 
   return (
     <>
-      <Hero />
+      <div id="hero">
+        <Hero />
+      </div>
       <div id="projects">
         <Projects />
       </div>

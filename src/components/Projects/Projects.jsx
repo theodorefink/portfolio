@@ -1,5 +1,8 @@
 import React from "react";
 import styles from './Projects.module.css';
+import spellingBeePic from '../../assets/spellingbee.png';
+import nzBirdsPic from '../../assets/nzbirds.png';
+import andiePic from '../../assets/andie.png';
 
 export const Projects = () => {
     return (
@@ -10,7 +13,7 @@ export const Projects = () => {
                 <div className={styles.projectBox2}>
                     <a href="https://pangram-solver.vercel.app" target="_blank" rel="noopener noreferrer">
                         <img 
-                            src="/spellingbee.png" 
+                            src={spellingBeePic}
                             alt="Photo of spelling bee project" 
                             className={styles.projectImage} 
                         />
@@ -24,7 +27,7 @@ export const Projects = () => {
                     <p className={styles.projectDesc}>This is a website that I made to learn web design. It displays information about New Zealand birds and offers the ability to filter and search.</p>
                     <a href="https://nzbirds.vercel.app" target="_blank" rel="noopener noreferrer">
                         <img 
-                            src="/nzbirds.png" 
+                            src={nzBirdsPic}
                             alt="Photo of NZ birds project" 
                             className={styles.projectImage} 
                         />
@@ -37,7 +40,7 @@ export const Projects = () => {
                 <div className={styles.projectBox2}>
                     <a href="https://github.com/theodorefink/ANDIE" target="_blank" rel="noopener noreferrer">
                         <img 
-                            src="/andie.png" 
+                            src={andiePic}
                             alt="Photo of ANDIE" 
                             className={styles.projectImage} 
                         />
